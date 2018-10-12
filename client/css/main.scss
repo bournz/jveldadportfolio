@@ -1,0 +1,155 @@
+@import "default/variables";
+@import "default/mixins";
+
+@import "base/reset";
+
+@import "layouts/navbar";
+
+// main css
+
+body {
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+.timeline {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    background-image: url(/images/bg.jpg);
+    background-position: center center;
+    background-size: 100%;
+    // img {
+    //     width: 100%;
+    // }
+}
+.main {
+    background-color: $gray;
+    h1 {
+        @include header;
+    }
+}
+.content {
+    background-color: #fff;
+    width: 100%;
+
+    .cover {
+        background-color: $yellow;
+        // max-width: 1080px;
+        max-width: 560px;
+        position: relative;
+        margin: auto;
+        padding: 10px 30px;
+    }
+
+    form {
+        position: relative;
+        min-height: 400px;
+        label {
+            display: block;
+            span {
+                display: block;
+            }
+        }
+        button {
+            background-color: $gray;
+            border: none;
+            border-bottom: 4px solid $gray-darker;
+            cursor: pointer;
+            font-weight: 700;
+            outline: none;
+            padding: 7px 15px;
+            &:focus {
+                background-color: $gray-dark;
+            }
+            &:active {
+                position: relative;
+                border: none;
+                top: 4px;
+            }
+        }
+    }
+
+    .ty {
+        display: none;
+
+        &.error {
+            color: $red;
+        }
+    }
+
+    .contact {
+        .connect {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        a {
+            background-color: $em;
+            border-bottom: 4px solid $em-dark;
+            border-radius: 3px;
+            color: #fff;
+            display: flex;
+            flex: 1 auto;
+            font-size: $font-size-medium;
+            font-weight: 700;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            padding: 5px 10px;
+            position: relative;
+
+            svg {
+                height: 20px;
+                width: 20px;
+                display: inline-flex;
+                align-items: center;
+            }
+
+            span {
+                display: inline-flex;
+                padding-left: 5px;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+            &.facebook {
+                background-color: $fb;
+                border-bottom: 4px solid $fb-dark;
+            }
+            &.linkedin {
+                background-color: $li;
+                border-bottom: 4px solid $li-dark;
+            }
+            &.github {
+                background-color: $gh;
+                border-bottom: 4px solid $gh-dark;
+            }
+        }
+    }
+
+    // @media all and (min-width: 500px) {
+    //     .cover {
+    //         background-color: $orange;
+    //         input {
+    //             width: 100%;   
+    //         }
+    //     }
+    // }
+}
+
+@include small_mobile {
+    .content {
+        .contact a {
+            flex: 2 35%;
+        }
+        .cover {
+            background-color: $orange;
+            input, textarea {
+                width: 100%;   
+            }
+        }
+    }
+}

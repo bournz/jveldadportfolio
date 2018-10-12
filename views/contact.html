@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jemo Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div class="timeline">
+        <!-- <img src="/images/bg.jpg" alt="Timeline"> -->
+    </div>
+    <header>
+        <div class="logo">
+            <a href="/"><img src="/images/logo.png" alt="Bournz"></a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                        <a href="/">Home</a>
+                </li>
+                <li>
+                        <a href="/about">About Me</a>
+                    </li>
+                <li>
+                    <a href="/contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <div class="main">
+        <h1>Jerome Veldad</h1>
+        <h4>Welcome on my site!!</h4>
+    </div> -->
+    <div class="content">
+        <div class="cover">
+            <h1>Contact Me</h1>
+            <p>I love connecting with other people. Just send me an <a href="mailto:jemo.veldad@hotmail.com">email</a> for the projects you want to discuss with me.</p>
+            <form id="contactme" action="/mail" method="POST">
+                <label for="email">
+                    <span><strong>Email</strong></span>
+                    <input type="text" name="email">
+                </label>
+                <label for="message">
+                    <span><strong>Message</strong></span>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </label>
+                <button type="submit">Submit</button>
+                <div id="ty-message" class="ty">
+                    <h2>Thank you!!</h2>
+                </div>
+                <div id="try-message" class="ty error">
+                        <h2>Something wen't wrong. Try Again</h2>
+                    </div>
+            </form>
+            <br>
+            <div class="contact">
+                <h2>Let's get in touch!</h2>
+                <div class="connect">
+                    <a href="mailto:jemo.veldad@hotmail.com">
+                            <svg id="icon-email" viewBox="0 0 100 68.89" width="100%" height="100%" style="fill:#fff"><title>icon-email</title>
+                                <path d="M36.25 38.44L47.74 49.1a3.33 3.33 0 0 0 4.51 0l11.5-10.66 24.69 23.78H11.56zM93.33 11v46.6L68.68 33.85zM6.67 11l24.65 22.85L6.67 57.64zm5.1-4.37h76.46L50 42.12zM4.44 0A4.51 4.51 0 0 0 0 4.44v60a4.51 4.51 0 0 0 4.44 4.44h91.12a4.51 4.51 0 0 0 4.44-4.44v-60A4.51 4.51 0 0 0 95.56 0z" data-name="Layer 1"></path>
+                            </svg>
+                        <span>Email</span>
+                    </a>
+                    <a class="github" href="https://bournz.github.io/veldad/" target="blank">
+                        <svg class="i-svg" height="50" version="1.1" width="50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" space="preserve" data-icon="facebook">
+                            <path d="M24.999,2.48c-12.75,0-23.087,10.338-23.087,23.09c0,10.199,6.613,18.854,15.791,21.907 c1.154,0.211,1.518-0.474,1.518-1.084c0-0.547,0.011-2.082,0-4.01c-6.422,1.398-7.753-3.038-7.753-3.038 c-1.048-2.671-2.562-3.377-2.562-3.377c-2.095-1.433,0.158-1.407,0.158-1.407c2.317,0.163,3.538,2.383,3.538,2.383 c2.059,3.522,5.403,2.505,6.717,1.916c0.21-1.491,0.808-2.51,1.468-3.087C15.66,35.188,10.27,33.211,10.27,24.361 c0-2.521,0.9-4.581,2.376-6.194c-0.239-0.584-1.031-2.932,0.226-6.112c0,0,1.939-0.62,6.349,2.369 c1.841-0.513,3.817-0.768,5.78-0.777c1.962,0.009,3.938,0.264,5.781,0.777c4.409-2.988,6.346-2.369,6.346-2.369 c1.258,3.18,0.466,5.528,0.229,6.112c1.478,1.613,2.373,3.673,2.373,6.194c0,8.872-5.397,10.823-10.543,11.392 c0.828,0.717,1.582,2.101,1.582,4.255c0,2.887,0,5.632,0,6.392c0,0.617,0.372,1.302,1.544,1.076 c9.167-3.059,15.776-11.708,15.776-21.905C48.089,12.818,37.75,2.48,24.999,2.48z" fill="#ffffff"></path>
+                        </svg>
+                        <span>Github</span>
+                    </a>
+                    <a class="facebook" href="https://www.facebook.com/janiyahnicoleveldad">
+                        <svg class="i-svg" height="50" version="1.1" width="50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" space="preserve" data-icon="facebook">
+                            <path d="M27.845,47.469V27.81h8.426l1.404-8.425h-9.83v-4.213c0-2.81,1.406-4.213,4.213-4.213h4.213V2.531 c-1.405,0-4.55,0-7.021,0c-7.021,0-9.83,4.213-9.83,11.234v5.618h-8.425v8.424h8.425v19.661H27.845L27.845,47.469z" fill="#ffffff"></path>
+                        </svg>
+                        <span>Facebook</span>
+                    </a>
+                    <a class="linkedin" href="https://www.linkedin.com/in/jeromeveldad">
+                        <svg class="i-svg" height="50" version="1.1" width="50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" space="preserve" data-icon="facebook">
+                            <path d="M13.83,41.668H5.401V13.571h8.429V41.668z M44.737,41.668h-8.429V26.66c0-3.912-1.394-5.857-4.154-5.857 c-2.189,0-3.577,1.086-4.274,3.273c0,3.545,0,17.592,0,17.592h-8.431c0,0,0.115-25.288,0-28.097h6.656l0.514,5.619h0.175 c1.729-2.81,4.489-4.713,8.275-4.713c2.881,0,5.207,0.801,6.985,2.815c1.794,2.014,2.684,4.713,2.684,8.514V41.668z M9.615,2.333 c2.404,0,4.357,1.888,4.357,4.214c0,2.33-1.953,4.214-4.357,4.214c-2.403,0-4.351-1.885-4.351-4.214 C5.264,4.22,7.212,2.333,9.615,2.333z" fill="#ffffff"></path>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </p>
+        </div>
+    </div>
+    <footer></footer>
+
+    <script>
+        $('#contactme').submit(function(event){
+            event.preventDefault();
+            $('#contactme button').blur();
+            var form = $( this );
+            url = form.attr( "action" );
+            var data = {};
+            data.email = form.find( "input[name='email']" ).val();
+            data.message = form.find( "textarea[name='message']" ).val();
+            var posting = $.post(url, data);
+            posting.done(function( data ) {            
+                console.log('data result', data);
+                if(data === 'thankyou') {
+                    form.find( "input[name='email']" ).val('');
+                    form.find( "textarea[name='message']" ).val('');
+                    $('#ty-message').css('display', 'block');
+                    setTimeout(function(){
+                        $('#ty-message').css('display', 'none');
+                    }, 5000);
+                } else {
+                    $('#try-message').css('display', 'block');
+                    setTimeout(function(){
+                        $('#try-message').css('display', 'none');
+                    }, 5000);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

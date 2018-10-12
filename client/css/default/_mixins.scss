@@ -1,0 +1,10 @@
+@mixin header {
+    font-size: $font-size-large;
+    color: $green;
+}
+
+@mixin small_mobile {
+    @media all and (max-width: $small_mobile) {
+        @content;
+    }
+}

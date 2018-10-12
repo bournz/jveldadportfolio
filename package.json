@@ -1,0 +1,26 @@
+{
+  "name": "veldad",
+  "version": "1.0.0",
+  "description": "Jemo Veldad CV",
+  "main": "index.js",
+  "scripts": {
+    "convert-sass": "node-sass ./client/css/main.scss ./public/css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bournz/veldad.git"
+  },
+  "author": "Jemo Veldad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bournz/veldad/issues"
+  },
+  "homepage": "https://github.com/bournz/veldad#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "googleapis": "^34.0.0",
+    "node-sass": "^4.9.3",
+    "nodemailer": "^4.6.8"
+  }
+}
